@@ -188,10 +188,7 @@ i{
 #radio5:checked ~ .firts{
     margin-left: -54%;
 }
-#radio6:checked ~ .firts{
-    margin-left: -68%;
-}
-
+ 
 
 @media screen and (max-width: 320px){
   
@@ -210,9 +207,6 @@ i{
     #radio5:checked ~ .firts{
         margin-left: -61%;
     }
-    #radio6:checked ~ .firts{
-        margin-left: -76%;
-    }
-    
+ 
  
 } 
