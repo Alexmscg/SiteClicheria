@@ -1,0 +1,195 @@
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-bottom: 20px;
+  
+}
+
+// BG HOME
+.bg-home{
+    position: relative;
+
+}
+.bg-home::before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), );
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+// Hero --------------
+.hero{
+    color: $primary-dark;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 14px;
+    
+    h1{
+        text-align: center;
+        line-height: 150%;
+        max-width: 950px;
+        font-size: 30px;
+    }
+    p{
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+ //----------------------
+
+ //about -------------------
+.about{
+    overflow: hidden;
+    color: $primary-dark;
+    background-color: $white-cinza;
+    margin-top: 100px;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    img{
+        max-width: 570px;
+    }
+ 
+}
+.about-content div{
+    flex: 1;
+}
+.about-description{
+   
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content{
+       
+        flex-direction: column;
+        
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//SERVICES
+
+.services{
+    color: $primary-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+.services-content h2{ 
+    text-transform: uppercase;
+    color: $primary-dark;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+.haircuts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+}
+.haircut{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-cinza;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.5);
+    overflow: hidden;
+    height: 400px;
+    text-align: center;
+    padding: 5px;
+   
+    h3{
+        margin-top: 10px;
+        color: $primary-dark;
+    }
+
+    p{
+        margin-top: 20px;
+        color: $primary-dark;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .haircuts{
+        flex-direction: column;
+    }
+}
+
+//footer -----
+
+
+.footer{
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #304065;
+    padding: 54px 0;
+    gap: 30px;
+    color: $white-normal;
+    img{
+      width: 100px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+.footer-icons{
+    display: flex;
+    gap: 8px;
+    color: $white-normal;
+}
+
+//-------------------
+
+//Botão whatsapp
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+    img{
+        max-width: 74px;
+        transition: transform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+}
